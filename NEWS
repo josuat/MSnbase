@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.20.8
+-------------------------
+ o fix itraqdata <2016-06-29 Wed>
+
 CHANGES IN VERSION 1.20.7
 -------------------------
  o Fix bug in MSmap to dataframe methods <2016-05-24 Tue>
