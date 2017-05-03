@@ -125,7 +125,7 @@ MSmap <- function(object, scans, lowMz, highMz, resMz, hd,
     map <- mzR::get3Dmap(object, scans, lowMz, highMz, resMz)
     if (zeroIsNA)
         map[map == 0] <- NA
-    mz <- seq(lowMz, highMz, resMz)
+    mz <- seq(lowMz, highMz, length.out = dim(map)[2])
     rt <- hd$retentionTime[scans]
     .MSmap(call = .call, map = map,
            mz = mz, res = resMz,
